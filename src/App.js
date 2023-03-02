@@ -1,10 +1,12 @@
-import './App.css';
-import FormsPratice from './forms/FormsPratice';
+import "./App.css";
+import FieldArrayForm from "./forms/FieldArrayForm";
+import FormsPratice from "./forms/FormsPratice";
 
 function App() {
   return (
     <div className="App">
-      <FormsPratice/>
+      {/* <FormsPratice/> */}
+      <FieldArrayForm />
     </div>
   );
 }
