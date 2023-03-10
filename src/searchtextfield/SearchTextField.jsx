@@ -4,6 +4,23 @@ import TextField from "@mui/material/TextField";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+import Select from 'react-select';
+import {
+  ColourOption,
+  colourOptions,
+  FlavourOption,
+  GroupedOption,
+  groupedOptions,
+} from '../data';
+
+const formatGroupLabel = (data) => (
+  <div style={groupStyles}>
+    <span>{data.label}</span>
+    <span style={groupBadgeStyles}>{data.options.length}</span>
+  </div>
+
+);
+
 const suggestions = [
   { label: "Apple" },
   { label: "Banana" },
@@ -52,8 +69,16 @@ const SearchTextField = () => {
           showTimeSelect
           dateFormat="Pp"
         />
-
       </div>
+      <div>
+        <Select<ColourOption | FlavourOption, false, GroupedOption>
+        defaultValue={colourOptions[1]}
+        options={groupedOptions}
+        formatGroupLabel={formatGroupLabel}
+  />
+      </div>
+
+
     </>
   );
 };
