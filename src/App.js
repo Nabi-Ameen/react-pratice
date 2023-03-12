@@ -1,7 +1,7 @@
 import "./App.css";
 import DynamicForm from "./forms/DynamicForm";
-import FieldArrayForm from "./forms/FieldArrayForm";
-import FormsPratice from "./forms/FormsPratice";
+// import FieldArrayForm from "./forms/FieldArrayForm";
+// import FormsPratice from "./forms/FormsPratice";
 
 function App() {
   return (
